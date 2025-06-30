@@ -2,117 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Legend of the Seven Guardians - The Origins of Cautious Coin (CAUT)">
-  <title>Legend of the Seven Guardians | CAUT</title>
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Legend of the Seven Guardians</title>
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    body {
-      font-family: 'Unbounded', sans-serif;
-      background-color: #0a0a0a;
-      color: #f0f0f0;
-      line-height: 1.6;
-      padding: 1rem;
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
     }
-    header, main, footer {
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('guardians.png') no-repeat center center/cover;
+      z-index: -1;
+      filter: brightness(0.4);
+    }
+
+    .container {
+      padding: 2rem;
       max-width: 900px;
       margin: auto;
-      padding: 1.5rem 1rem;
     }
-    header {
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
       text-align: center;
     }
-    h1 {
-      font-size: 2.2rem;
-      color: #ffcc00;
-    }
+
     h2 {
-      color: #00bcd4;
+      font-size: 1.5rem;
       margin-top: 2rem;
-      font-size: 1.4rem;
+      color: #f9cc56;
     }
-    h3 {
-      color: #c3ff00;
-      margin-top: 1.2rem;
-    }
-    p, blockquote {
-      margin-top: 0.5rem;
-      font-size: 1rem;
-    }
+
     blockquote {
       font-style: italic;
-      color: #cccccc;
-      border-left: 3px solid #ffcc00;
-      padding-left: 1rem;
-      margin-top: 1rem;
+      color: #ccc;
+      margin: 0.5rem 0 1rem;
     }
-    img.hero {
-      width: 100%;
-      border-radius: 8px;
-      margin: 2rem 0;
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 1.2rem;
     }
-    footer {
-      text-align: center;
-      font-size: 0.8rem;
-      color: #888;
-      border-top: 1px solid #222;
-      margin-top: 3rem;
-    }
-    @media (max-width: 600px) {
-      h1 { font-size: 1.7rem; }
-      h2 { font-size: 1.2rem; }
-      p { font-size: 0.95rem; }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      h2 {
+        font-size: 1.3rem;
+      }
+      .container {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
+  <div class="container">
     <h1>Legend of the Seven Guardians</h1>
-    <p><em>They were not chosen for their strength, but for the power they refused to use.</em></p>
-  </header>
-  <main>
-    <img class="hero" src="legend-seven-guardians-hero.png" alt="The Seven Guardians Landscape">
-    <section>
-      <h2>🦉 Selor the Unspoken – <em>Guardian of Thought</em></h2>
-      <blockquote>The wisest action is the one not shared.</blockquote>
-      <p>Mute by choice with a perfect memory. Selor bore forbidden truths in silence. His coin glows when lies are present.</p>
+    <blockquote>“They were not chosen for their strength, but for the power they refused to use.”</blockquote>
+    <p>Long before Cautious Coin was forged... [Insert your full narrative content here]</p>
 
-      <h2>🛡️ Myra of the Still Blade – <em>Guardian of Peace</em></h2>
-      <blockquote>She won every duel... by never drawing her sword.</blockquote>
-      <p>Restraint made her invincible. Her coin freezes time, but only for peacemakers.</p>
+    <h2>🦉 Selor the Unspoken – Guardian of Thought</h2>
+    <blockquote>“The wisest action is the one not shared.”</blockquote>
+    <p>Selor carried the burden of forbidden knowledge without ever writing or speaking it...</p>
 
-      <h2>🔒 Kova the Unopened – <em>Guardian of Secrets</em></h2>
-      <blockquote>She sealed the world’s deadliest truths, even from herself.</blockquote>
-      <p>Erased her mind to protect the world. Her coin deciphers any cipher at the cost of precious memory.</p>
-
-      <h2>🔥 Varrik the Ember – <em>Guardian of Anger</em></h2>
-      <blockquote>He once burned cities… until he chose to become cold.</blockquote>
-      <p>He walked across frozen lands to kill his wrath. His coin’s ember burns only when vows are broken.</p>
-
-      <h2>🕰️ Ivas the Patient – <em>Guardian of Time</em></h2>
-      <blockquote>He waited three centuries to speak… and only said one word.</blockquote>
-      <p>He saw futures and chose silence. His coin can bend time, but it costs years of life.</p>
-
-      <h2>🌀 Ryn the Diverter – <em>Guardian of Impulse</em></h2>
-      <blockquote>She mastered chaos to redirect it toward purpose.</blockquote>
-      <p>She defended cities with illusions. Her coin only deflects when used to protect others.</p>
-
-      <h2>⚖️ Kael the Archivist – <em>Guardian of Balance</em></h2>
-      <blockquote>He holds the Book... but never opens it without asking why.</blockquote>
-      <p>The record keeper of all. His coin logs all CAUT movements but demands a price of influence for access.</p>
-
-      <h2>🔚 The Last Gathering</h2>
-      <p>The Seven vanished after one mission each. When the Last Architect unites their restraint, CAUT’s fragments will open the Vault of Echoes.</p>
-      <blockquote>They were not symbols of power, but of choice. Their silence is the echo that still guides us.</blockquote>
-    </section>
-  </main>
-  <footer>
-    <p>© 2025 Cautious Coin (CAUT). Designed for the echoes of reason.</p>
-  </footer>
+    <!-- Repeat similarly for the remaining guardians... -->
+  </div>
 </body>
 </html>
