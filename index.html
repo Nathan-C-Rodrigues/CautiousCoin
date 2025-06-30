@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cautious Coin Wallet</title>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0d0d0d;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+    .logo {
+      width: 128px;
+      height: 128px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #a770ef;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #9147ff;
+    }
+  </style>
+</head>
+<body>
+  <img class="logo" src="https://raw.githubusercontent.com/Nathan-C-Rodrigues/CautiousCoin/main/logo.png" alt="Cautious Coin Logo">
+  <h1>Cautious Coin (CAUT)</h1>
+  <p>Network: Polygon</p>
+  <p>CAUT Balance: <strong id="balance">0</strong></p>
+  <button onclick="connectWallet()">Connect Wallet</button>
+
+  <script>
+    const tokenAddress = "0x851AcB68afA6EE3F4F1af1f91609B67645C3eFe27";
+    const tokenABI = [
+      "function balanceOf(address) view returns (uint256)",
+      "function decimals() view returns (uint8)"
+    ];
+
+    async function connectWallet() {
+      if (window.ethereum) {
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        const signer = provider.getSigner();
+
+        try {
+          await provider.send("eth_requestAccounts", []);
+          const address = await signer.getAddress();
+          const tokenContract = new ethers.Contract(tokenAddress, tokenABI, provider);
+
+          const balance = await tokenContract.balanceOf(address);
+          const decimals = await tokenContract.decimals();
+          const formatted = ethers.utils.formatUnits(balance, decimals);
+          document.getElementById('balance').textContent = formatted;
+        } catch (err) {
+          alert("Error connecting wallet: " + err.message);
+        }
+      } else {
+        alert("MetaMask not found. Please install it.");
+      }
+    }
+  </script>
+</body>
+</html>
