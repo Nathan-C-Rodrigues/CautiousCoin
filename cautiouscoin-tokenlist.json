@@ -1,0 +1,14 @@
+{
+  "name": "Cautious List",
+  "logoURI": "https://raw.githubusercontent.com/Nathan-C-Rodrigues/cautiouscoin-tokenlist/main/logo.png",
+  "tokens": [
+    {
+      "chainId": 137,
+      "address": "0x851AcB68afA6EE3F4F1af191609B67645C3eFe27",
+      "symbol": "CAUT",
+      "name": "CautiousCoin",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/Nathan-C-Rodrigues/cautiouscoin-tokenlist/main/logo.png"
+    }
+  ]
+}
