@@ -1,90 +1,118 @@
-import React from "react";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Legend of the Seven Guardians - The Origins of Cautious Coin (CAUT)">
+  <title>Legend of the Seven Guardians | CAUT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Unbounded', sans-serif;
+      background-color: #0a0a0a;
+      color: #f0f0f0;
+      line-height: 1.6;
+      padding: 1rem;
+    }
+    header, main, footer {
+      max-width: 900px;
+      margin: auto;
+      padding: 1.5rem 1rem;
+    }
+    header {
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.2rem;
+      color: #ffcc00;
+    }
+    h2 {
+      color: #00bcd4;
+      margin-top: 2rem;
+      font-size: 1.4rem;
+    }
+    h3 {
+      color: #c3ff00;
+      margin-top: 1.2rem;
+    }
+    p, blockquote {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+    blockquote {
+      font-style: italic;
+      color: #cccccc;
+      border-left: 3px solid #ffcc00;
+      padding-left: 1rem;
+      margin-top: 1rem;
+    }
+    img.hero {
+      width: 100%;
+      border-radius: 8px;
+      margin: 2rem 0;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #888;
+      border-top: 1px solid #222;
+      margin-top: 3rem;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 1.7rem; }
+      h2 { font-size: 1.2rem; }
+      p { font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Legend of the Seven Guardians</h1>
+    <p><em>They were not chosen for their strength, but for the power they refused to use.</em></p>
+  </header>
+  <main>
+    <img class="hero" src="legend-seven-guardians-hero.png" alt="The Seven Guardians Landscape">
+    <section>
+      <h2>🦉 Selor the Unspoken – <em>Guardian of Thought</em></h2>
+      <blockquote>The wisest action is the one not shared.</blockquote>
+      <p>Mute by choice with a perfect memory. Selor bore forbidden truths in silence. His coin glows when lies are present.</p>
 
-export default function SevenGuardians() {
-  const guardians = [
-    {
-      title: "Selor the Unspoken",
-      emoji: "🦉",
-      role: "Guardian of Thought",
-      quote: "The wisest action is the one not shared.",
-      description:
-        "He was mute by choice, and his memory perfect. Selor carried the burden of forbidden knowledge without ever writing or speaking it. His coin glows only in the presence of lies.",
-    },
-    {
-      title: "Myra of the Still Blade",
-      emoji: "🛡️",
-      role: "Guardian of Peace",
-      quote: "She won every duel... by never drawing her sword.",
-      description:
-        "A swordswoman so deadly that no one dared challenge her. Her restraint preserved the balance between nations. Her coin can freeze time — but only for those who seek peace.",
-    },
-    {
-      title: "Kova the Unopened",
-      emoji: "🔒",
-      role: "Guardian of Secrets",
-      quote: "She sealed the world’s deadliest truths, even from herself.",
-      description:
-        "Kova erased her own memory to hide the formulae of forbidden creation. Her coin unlocks any cipher, but each use comes at the cost of forgetting something precious.",
-    },
-    {
-      title: "Varrik the Ember",
-      emoji: "🔥",
-      role: "Guardian of Anger",
-      quote: "He once burned cities… until he chose to become cold.",
-      description:
-        "Once a conqueror, Varrik silenced his rage by walking barefoot across frozen tundra. His coin contains a limitless ember — but it only burns when its bearer breaks their vow.",
-    },
-    {
-      title: "Ivas the Patient",
-      emoji: "🕰️",
-      role: "Guardian of Time",
-      quote: "He waited three centuries to speak… and only said one word.",
-      description:
-        "Ivas was known to sit still for decades. It’s said he foresaw all futures, yet chose only one: stillness. His coin manipulates time — but accelerates age for every use.",
-    },
-    {
-      title: "Ryn the Diverter",
-      emoji: "🌀",
-      role: "Guardian of Impulse",
-      quote: "She mastered chaos to redirect it toward purpose.",
-      description:
-        "Ryn was a strategist, using illusions and misdirection to save cities. Her coin diverts all incoming attacks, but only when defending another.",
-    },
-    {
-      title: "Kael the Archivist",
-      emoji: "⚖️",
-      role: "Guardian of Balance",
-      quote: "He holds the Book... but never opens it without asking why.",
-      description:
-        "Kael recorded everything but acted on nothing. His coin holds a perfect ledger of every CAUT movement, but viewing it demands the sacrifice of influence.",
-    },
-  ];
+      <h2>🛡️ Myra of the Still Blade – <em>Guardian of Peace</em></h2>
+      <blockquote>She won every duel... by never drawing her sword.</blockquote>
+      <p>Restraint made her invincible. Her coin freezes time, but only for peacemakers.</p>
 
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-950 to-gray-900 text-white p-4 sm:p-8">
-      <h1 className="text-3xl sm:text-5xl font-bold mb-4 text-center">Legend of the Seven Guardians</h1>
-      <p className="italic text-center max-w-xl mx-auto text-gray-300 mb-8">
-        "They were not chosen for their strength, but for the power they refused to use."
-      </p>
-      <div className="grid sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
-        {guardians.map((g, idx) => (
-          <div
-            key={idx}
-            className="bg-black bg-opacity-30 p-6 rounded-2xl shadow-xl border border-gray-700 hover:border-cyan-400 transition-all"
-          >
-            <div className="text-3xl mb-2">{g.emoji}</div>
-            <h2 className="text-xl font-semibold mb-1">{g.title}</h2>
-            <p className="text-cyan-400 font-medium mb-2">{g.role}</p>
-            <blockquote className="text-sm italic text-gray-300 mb-2">
-              "{g.quote}"
-            </blockquote>
-            <p className="text-sm text-gray-200 leading-relaxed">{g.description}</p>
-          </div>
-        ))}
-      </div>
-      <footer className="mt-12 text-center text-gray-500 text-sm">
-        &copy; {new Date().getFullYear()} Cautious Coin. All Rights Reserved.
-      </footer>
-    </div>
-  );
-}
+      <h2>🔒 Kova the Unopened – <em>Guardian of Secrets</em></h2>
+      <blockquote>She sealed the world’s deadliest truths, even from herself.</blockquote>
+      <p>Erased her mind to protect the world. Her coin deciphers any cipher at the cost of precious memory.</p>
+
+      <h2>🔥 Varrik the Ember – <em>Guardian of Anger</em></h2>
+      <blockquote>He once burned cities… until he chose to become cold.</blockquote>
+      <p>He walked across frozen lands to kill his wrath. His coin’s ember burns only when vows are broken.</p>
+
+      <h2>🕰️ Ivas the Patient – <em>Guardian of Time</em></h2>
+      <blockquote>He waited three centuries to speak… and only said one word.</blockquote>
+      <p>He saw futures and chose silence. His coin can bend time, but it costs years of life.</p>
+
+      <h2>🌀 Ryn the Diverter – <em>Guardian of Impulse</em></h2>
+      <blockquote>She mastered chaos to redirect it toward purpose.</blockquote>
+      <p>She defended cities with illusions. Her coin only deflects when used to protect others.</p>
+
+      <h2>⚖️ Kael the Archivist – <em>Guardian of Balance</em></h2>
+      <blockquote>He holds the Book... but never opens it without asking why.</blockquote>
+      <p>The record keeper of all. His coin logs all CAUT movements but demands a price of influence for access.</p>
+
+      <h2>🔚 The Last Gathering</h2>
+      <p>The Seven vanished after one mission each. When the Last Architect unites their restraint, CAUT’s fragments will open the Vault of Echoes.</p>
+      <blockquote>They were not symbols of power, but of choice. Their silence is the echo that still guides us.</blockquote>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Cautious Coin (CAUT). Designed for the echoes of reason.</p>
+  </footer>
+</body>
+</html>
