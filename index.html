@@ -1,74 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cautious Coin Wallet</title>
-  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cautious Coin (CAUT)</title>
+  <link rel="icon" href="logo.png" type="image/png" />
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #0d0d0d;
-      color: white;
+      background-color: #0d0d0d;
+      color: #ffd700;
+      font-family: 'Trebuchet MS', sans-serif;
+      margin: 0;
+      padding: 0;
       text-align: center;
-      padding: 30px;
     }
-    .logo {
-      width: 128px;
-      height: 128px;
-      border-radius: 50%;
-      margin-bottom: 20px;
+    header {
+      background: linear-gradient(to right, #111, #222);
+      padding: 2em 1em;
     }
-    button {
-      padding: 10px 20px;
-      background-color: #a770ef;
-      color: white;
+    header img {
+      width: 120px;
+      height: auto;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin: 0.2em 0;
+    }
+    .subtitle {
+      font-size: 1.2em;
+      color: #ccc;
+    }
+    .content {
+      padding: 2em;
+    }
+    .button {
+      background-color: #ffd700;
+      color: #000;
+      padding: 0.7em 1.5em;
       border: none;
-      border-radius: 8px;
-      font-size: 16px;
+      border-radius: 4px;
+      font-size: 1em;
       cursor: pointer;
-      margin-top: 10px;
+      margin: 1em;
+      text-decoration: none;
     }
-    button:hover {
-      background-color: #9147ff;
+    .footer {
+      background: #111;
+      color: #888;
+      font-size: 0.9em;
+      padding: 1em;
     }
   </style>
 </head>
 <body>
-  <img class="logo" src="https://raw.githubusercontent.com/Nathan-C-Rodrigues/CautiousCoin/main/logo.png" alt="Cautious Coin Logo">
-  <h1>Cautious Coin (CAUT)</h1>
-  <p>Network: Polygon</p>
-  <p>CAUT Balance: <strong id="balance">0</strong></p>
-  <button onclick="connectWallet()">Connect Wallet</button>
+  <header>
+    <img src="logo.png" alt="Cautious Coin Logo" />
+    <h1>Cautious Coin (CAUT)</h1>
+    <p class="subtitle">Forged in the spirit of legacy, inspired by the treasure of One Piece</p>
+  </header>
 
-  <script>
-    const tokenAddress = "0x851AcB68afA6EE3F4F1af1f91609B67645C3eFe27";
-    const tokenABI = [
-      "function balanceOf(address) view returns (uint256)",
-      "function decimals() view returns (uint8)"
-    ];
+  <div class="content">
+    <h2>About CAUT</h2>
+    <p>
+      Cautious Coin is a decentralized token built on the Polygon blockchain (ERC20 Standard). It represents caution, ambition, and
+      value — wrapped in legacy. With a fixed supply and a symbolic origin, CAUT is not just a token, it's a mark of vision.
+    </p>
 
-    async function connectWallet() {
-      if (window.ethereum) {
-        const provider = new ethers.providers.Web3Provider(window.ethereum);
-        const signer = provider.getSigner();
+    <h3>Key Information</h3>
+    <ul style="list-style: none; padding: 0;">
+      <li><strong>Token Name:</strong> Cautious Coin</li>
+      <li><strong>Symbol:</strong> CAUT</li>
+      <li><strong>Decimals:</strong> 18</li>
+      <li><strong>Contract Address:</strong> <br/><code>0x851AcB68afA6EE3F4F1af191609B67645C3eFe27</code></li>
+      <li><strong>Blockchain:</strong> Polygon (Mainnet)</li>
+    </ul>
 
-        try {
-          await provider.send("eth_requestAccounts", []);
-          const address = await signer.getAddress();
-          const tokenContract = new ethers.Contract(tokenAddress, tokenABI, provider);
+    <a href="https://polygonscan.com/token/0x851AcB68afA6EE3F4F1af191609B67645C3eFe27" target="_blank" class="button">View on PolygonScan</a>
+    <a href="https://github.com/Nathan-C-Rodrigues/CautiousCoin" target="_blank" class="button">GitHub</a>
+  </div>
 
-          const balance = await tokenContract.balanceOf(address);
-          const decimals = await tokenContract.decimals();
-          const formatted = ethers.utils.formatUnits(balance, decimals);
-          document.getElementById('balance').textContent = formatted;
-        } catch (err) {
-          alert("Error connecting wallet: " + err.message);
-        }
-      } else {
-        alert("MetaMask not found. Please install it.");
-      }
-    }
-  </script>
+  <div class="footer">
+    &copy; 2025 Cautious Coin. Designed by Nathan C. Rodrigues.
+  </div>
 </body>
 </html>
