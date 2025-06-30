@@ -1,108 +1,90 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ScrollArea } from "@/components/ui/scroll-area";
+import React from "react";
 
-export default function LegendPage() {
+export default function SevenGuardians() {
+  const guardians = [
+    {
+      title: "Selor the Unspoken",
+      emoji: "🦉",
+      role: "Guardian of Thought",
+      quote: "The wisest action is the one not shared.",
+      description:
+        "He was mute by choice, and his memory perfect. Selor carried the burden of forbidden knowledge without ever writing or speaking it. His coin glows only in the presence of lies.",
+    },
+    {
+      title: "Myra of the Still Blade",
+      emoji: "🛡️",
+      role: "Guardian of Peace",
+      quote: "She won every duel... by never drawing her sword.",
+      description:
+        "A swordswoman so deadly that no one dared challenge her. Her restraint preserved the balance between nations. Her coin can freeze time — but only for those who seek peace.",
+    },
+    {
+      title: "Kova the Unopened",
+      emoji: "🔒",
+      role: "Guardian of Secrets",
+      quote: "She sealed the world’s deadliest truths, even from herself.",
+      description:
+        "Kova erased her own memory to hide the formulae of forbidden creation. Her coin unlocks any cipher, but each use comes at the cost of forgetting something precious.",
+    },
+    {
+      title: "Varrik the Ember",
+      emoji: "🔥",
+      role: "Guardian of Anger",
+      quote: "He once burned cities… until he chose to become cold.",
+      description:
+        "Once a conqueror, Varrik silenced his rage by walking barefoot across frozen tundra. His coin contains a limitless ember — but it only burns when its bearer breaks their vow.",
+    },
+    {
+      title: "Ivas the Patient",
+      emoji: "🕰️",
+      role: "Guardian of Time",
+      quote: "He waited three centuries to speak… and only said one word.",
+      description:
+        "Ivas was known to sit still for decades. It’s said he foresaw all futures, yet chose only one: stillness. His coin manipulates time — but accelerates age for every use.",
+    },
+    {
+      title: "Ryn the Diverter",
+      emoji: "🌀",
+      role: "Guardian of Impulse",
+      quote: "She mastered chaos to redirect it toward purpose.",
+      description:
+        "Ryn was a strategist, using illusions and misdirection to save cities. Her coin diverts all incoming attacks, but only when defending another.",
+    },
+    {
+      title: "Kael the Archivist",
+      emoji: "⚖️",
+      role: "Guardian of Balance",
+      quote: "He holds the Book... but never opens it without asking why.",
+      description:
+        "Kael recorded everything but acted on nothing. His coin holds a perfect ledger of every CAUT movement, but viewing it demands the sacrifice of influence.",
+    },
+  ];
+
   return (
-    <div className="p-4 md:p-10 max-w-3xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6 text-center text-yellow-500">Legend of the Seven Guardians</h1>
-      <p className="italic text-center mb-6">"They were not chosen for their strength, but for the power they refused to use."</p>
-      <ScrollArea className="h-[85vh] md:h-[80vh] w-full rounded-xl border p-4 bg-black text-white">
-        <div className="space-y-6">
-          <p>
-            Long before Cautious Coin was forged, before the Vault of Echoes sealed its final chamber, there were the <strong>Seven Guardians of Logic</strong>. Each one held a fragment of CAUT’s original essence — not to control it, but to protect it.
-          </p>
-
-          <p>Their names are lost to time, but their principles remain.</p>
-
-          <Card className="bg-zinc-900 border-yellow-500">
-            <CardContent className="p-4">
-              <h2 className="text-xl font-semibold mb-2">\                🥍 1. Selor the Unspoken – <em>Guardian of Thought</em>
-              </h2>
-              <blockquote>“The wisest action is the one not shared.”</blockquote>
-              <p>
-                He was mute by choice, and his memory perfect. Selor carried the burden of forbidden knowledge without ever writing or speaking it. His coin glows only in the presence of lies.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-zinc-900 border-yellow-500">
-            <CardContent className="p-4">
-              <h2 className="text-xl font-semibold mb-2">\                🛡️ 2. Myra of the Still Blade – <em>Guardian of Peace</em>
-              </h2>
-              <blockquote>“She won every duel... by never drawing her sword.”</blockquote>
-              <p>
-                A swordswoman so deadly that no one dared challenge her. Her restraint preserved the balance between nations. Her coin can freeze time — but only for those who seek peace.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-zinc-900 border-yellow-500">
-            <CardContent className="p-4">
-              <h2 className="text-xl font-semibold mb-2">🔒 3. Kova the Unopened – <em>Guardian of Secrets</em>
-              </h2>
-              <blockquote>“She sealed the world’s deadliest truths, even from herself.”</blockquote>
-              <p>
-                Kova erased her own memory to hide the formulae of forbidden creation. Her coin unlocks any cipher, but each use comes at the cost of forgetting something precious.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-zinc-900 border-yellow-500">
-            <CardContent className="p-4">
-              <h2 className="text-xl font-semibold mb-2">🔥 4. Varrik the Ember – <em>Guardian of Anger</em>
-              </h2>
-              <blockquote>“He once burned cities… until he chose to become cold.”</blockquote>
-              <p>
-                Once a conqueror, Varrik silenced his rage by walking barefoot across frozen tundra. His coin contains a limitless ember — but it only burns when its bearer breaks their vow.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-zinc-900 border-yellow-500">
-            <CardContent className="p-4">
-              <h2 className="text-xl font-semibold mb-2">🕰️ 5. Ivas the Patient – <em>Guardian of Time</em>
-              </h2>
-              <blockquote>“He waited three centuries to speak… and only said one word.”</blockquote>
-              <p>
-                Ivas was known to sit still for decades. It’s said he foresaw all futures, yet chose only one: stillness. His coin manipulates time — but accelerates age for every use.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-zinc-900 border-yellow-500">
-            <CardContent className="p-4">
-              <h2 className="text-xl font-semibold mb-2">🌀 6. Ryn the Diverter – <em>Guardian of Impulse</em>
-              </h2>
-              <blockquote>“She mastered chaos to redirect it toward purpose.”</blockquote>
-              <p>
-                Ryn was a strategist, using illusions and misdirection to save cities. Her coin diverts all incoming attacks, but only when defending another.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-zinc-900 border-yellow-500">
-            <CardContent className="p-4">
-              <h2 className="text-xl font-semibold mb-2">⚖️ 7. Kael the Archivist – <em>Guardian of Balance</em>
-              </h2>
-              <blockquote>“He holds the Book... but never opens it without asking why.”</blockquote>
-              <p>
-                Kael recorded everything but acted on nothing. His coin holds a perfect ledger of every CAUT movement, but viewing it demands the sacrifice of influence.
-              </p>
-            </CardContent>
-          </Card>
-
-          <p>
-            <strong>✡ The Last Gathering</strong>
-            <br />
-            Each Guardian disappeared after fulfilling a single silent mission. It’s said that when the <strong>Last Architect</strong> awakens and proves mastery over all seven forms of restraint, the fragments of CAUT will unite — and the <em>Vault of Echoes</em> will open.
-          </p>
-
-          <blockquote className="italic text-center text-yellow-400">
-            “They were not symbols of power, but of choice. Their silence is the echo that still guides us.”
-          </blockquote>
-        </div>
-      </ScrollArea>
+    <div className="min-h-screen bg-gradient-to-b from-gray-950 to-gray-900 text-white p-4 sm:p-8">
+      <h1 className="text-3xl sm:text-5xl font-bold mb-4 text-center">Legend of the Seven Guardians</h1>
+      <p className="italic text-center max-w-xl mx-auto text-gray-300 mb-8">
+        "They were not chosen for their strength, but for the power they refused to use."
+      </p>
+      <div className="grid sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        {guardians.map((g, idx) => (
+          <div
+            key={idx}
+            className="bg-black bg-opacity-30 p-6 rounded-2xl shadow-xl border border-gray-700 hover:border-cyan-400 transition-all"
+          >
+            <div className="text-3xl mb-2">{g.emoji}</div>
+            <h2 className="text-xl font-semibold mb-1">{g.title}</h2>
+            <p className="text-cyan-400 font-medium mb-2">{g.role}</p>
+            <blockquote className="text-sm italic text-gray-300 mb-2">
+              "{g.quote}"
+            </blockquote>
+            <p className="text-sm text-gray-200 leading-relaxed">{g.description}</p>
+          </div>
+        ))}
+      </div>
+      <footer className="mt-12 text-center text-gray-500 text-sm">
+        &copy; {new Date().getFullYear()} Cautious Coin. All Rights Reserved.
+      </footer>
     </div>
   );
 }
