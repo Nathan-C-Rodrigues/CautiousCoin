@@ -6,12 +6,12 @@ Cautiouscoin (CAUT) is more than a cryptocurrency—it is a symbolic representat
 
 ## Token Overview
 
-* **Name:** Cautiouscoin
-* **Symbol:** CAUT
-* **Network:** Polygon (POS)
-* **Contract Address:** 0x851AcB68afA6EE3F4F1af191609B67645C3eFe27
-* **Decimals:** 18
-* **Total Supply:** 1,000,000 CAUT
+* **Name:** Cautiouscoin  
+* **Symbol:** CAUT  
+* **Network:** Polygon (POS)  
+* **Contract Address:** 0x851AcB68afA6EE3F4F1af191609B67645C3eFe27  
+* **Decimals:** 18  
+* **Total Supply:** 1,000,000 CAUT  
 
 ## Mission
 
@@ -25,56 +25,53 @@ Our vision is to build a decentralized ecosystem where every transaction echoes 
 
 The mythology of Cautiouscoin is rooted in the fictional world of the Seven Guardians:
 
-1. **Selor the Unspoken** – Guardian of Thought
-2. **Myra of the Still Blade** – Guardian of Peace
-3. **Kova the Unopened** – Guardian of Secrets
-4. **Varrik the Ember** – Guardian of Anger
-5. **Ivas the Patient** – Guardian of Time
-6. **Ryn the Diverter** – Guardian of Impulse
-7. **Kael the Archivist** – Guardian of Balance
+1. **Selor the Unspoken** – Guardian of Thought  
+2. **Myra of the Still Blade** – Guardian of Peace  
+3. **Kova the Unopened** – Guardian of Secrets  
+4. **Varrik the Ember** – Guardian of Anger  
+5. **Ivas the Patient** – Guardian of Time  
+6. **Ryn the Diverter** – Guardian of Impulse  
+7. **Kael the Archivist** – Guardian of Balance  
 
 Each Guardian represents a core principle and is reflected in the long-term design of the CAUT token ecosystem.
 
 ## Token Utility
 
-* **Governance:** CAUT holders will vote on protocol decisions and ecosystem development.
-* **Treasury Access:** Only holders with enough staked CAUT can propose treasury actions.
-* **Lore Voting:** Community votes on the evolving storyline of the Guardians.
+* **Governance:** CAUT holders will vote on protocol decisions and ecosystem development.  
+* **Treasury Access:** Only holders with enough staked CAUT can propose treasury actions.  
+* **Lore Voting:** Community votes on the evolving storyline of the Guardians.  
 
 ## Tokenomics
 
-* **Initial Supply:** 1,000,000 CAUT
-* **No Premine**
-* **No Private Sale**
-* **100% Community Distribution**
+* **Initial Supply:** 1,000,000 CAUT  
+* **No Premine**  
+* **No Private Sale**  
+* **100% Community Distribution**  
 
 ## Distribution Model
 
-* 50% Airdrop Campaigns
-* 30% Staking Rewards
-* 10% Ecosystem Fund
-* 5% Development Fund
-* 5% Marketing
+* 50% Airdrop Campaigns  
+* 30% Staking Rewards  
+* 10% Ecosystem Fund  
+* 5% Development Fund  
+* 5% Marketing  
 
 ## Roadmap
 
-**Q2 2025**
+**Q2 2025**  
+- Token Deployment  
+- Website Launch  
+- Lore Announcement  
 
-* Token Deployment
-* Website Launch
-* Lore Announcement
+**Q3 2025**  
+- CoinGecko/CoinMarketCap Listings  
+- Community Staking Launch  
+- NFT Lore Artifacts Airdrop  
 
-**Q3 2025**
-
-* CoinGecko/CoinMarketCap Listings
-* Community Staking Launch
-* NFT Lore Artifacts Airdrop
-
-**Q4 2025**
-
-* DAO Formation
-* Animated Lore Episodes Launch
-* First Treasury Vote
+**Q4 2025**  
+- DAO Formation  
+- Animated Lore Episodes Launch  
+- First Treasury Vote  
 
 ## Explorer
 
@@ -82,11 +79,11 @@ Each Guardian represents a core principle and is reflected in the long-term desi
 
 ## Website
 
-[https://cautiouscoin.com](https://cautiouscoin.com)
+[https://nathan-c-rodrigues.github.io/CautiousCoin/](https://nathan-c-rodrigues.github.io/CautiousCoin/)
 
 ## Socials
 
-* [X (Twitter)](https://x.com/CAUTIOUSCOIN)
+* [X (Twitter)](https://x.com/CAUTIOUSCOIN)  
 * [GitHub](https://github.com/Nathan-C-Rodrigues/CautiousCoin)
 
 ## Legal Disclaimer
@@ -95,6 +92,5 @@ Cautiouscoin is a decentralized experiment. Nothing in this whitepaper constitut
 
 ---
 
-**"They were not chosen for their strength, but for the power they refused to use."**
-
+**"They were not chosen for their strength, but for the power they refused to use."**  
 \#LegendsLiveOn #CAUT
