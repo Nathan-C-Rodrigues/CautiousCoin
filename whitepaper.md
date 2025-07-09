@@ -43,4 +43,4 @@ And now, it is written — on-chain, in soul, and in silence.
 
 ---
 
-##CAUT## — The Cautious Coin. You do not own it. You earn it.
+## CAUT ## — The Cautious Coin. You do not own it. You earn it.
