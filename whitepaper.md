@@ -1,6 +1,6 @@
 # The Legend of the Outcast — Cautious Coin Whitepaper
 
-//The Legend of the Outcast — Cautious Coin's Eternal Law//
+### The Legend of the Outcast — Cautious Coin's Eternal Law ###
 
 ---
 
@@ -43,4 +43,4 @@ And now, it is written — on-chain, in soul, and in silence.
 
 ---
 
-CAUT — The Cautious Coin. You do not own it. You earn it.
+##CAUT## — The Cautious Coin. You do not own it. You earn it.
