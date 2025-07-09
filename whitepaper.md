@@ -33,7 +33,7 @@ Its creator was never known — only whispered as "The One Who Watched" — an o
 They say those who earn the respect of Cautious Coin never lose it.
 And those who chase it blindly — never find it again.
 
-This is no coin for kings.
+This is not a coin for kings.
 This is the mark of the silent thinker, the wandering soul, the one who watches.
 
 This is the creed — not just of a token, but of a way of life.
